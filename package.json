@@ -1,0 +1,23 @@
+{
+  "name": "miningos-mock-control-service",
+  "version": "0.0.1",
+  "description": "MiningOS Mock Control Service",
+  "author": "Tether",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tetherto/miningos-mock-control-service.git"
+  },
+  "main": "mock-control-agent.js",
+  "engine": {
+    "node": ">=20.0"
+  },
+  "dependencies": {
+    "debug": "4.3.5",
+    "fastify": "4.27.0",
+    "mingo": "6.4.15"
+  },
+  "devDependencies": {
+    "standard": "17.1.2"
+  }
+}
