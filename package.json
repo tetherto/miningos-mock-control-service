@@ -20,6 +20,7 @@
     "mock-control-agent.js",
     "routes.js"
   ],  
+  "type": "commonjs",
   "dependencies": {
     "debug": "4.3.5",
     "fastify": "5.8.4",
