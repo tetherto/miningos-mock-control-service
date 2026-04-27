@@ -23,7 +23,7 @@
   "type": "commonjs",
   "dependencies": {
     "debug": "4.3.5",
-    "fastify": "5.8.4",
+    "fastify": "5.8.5",
     "mingo": "6.4.15"
   },
   "devDependencies": {
