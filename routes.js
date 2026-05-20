@@ -31,7 +31,8 @@ const routes = {
         delete req.body.offline
 
         // update thing state with the req.body.state saving the same object reference
-        Object.assign(device.state, JSON.parse(req.body)?.state)
+        const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body
+        Object.assign(device.state, body?.state)
 
         debug('device.state', device.state)
       } else {

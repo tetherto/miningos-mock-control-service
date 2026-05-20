@@ -21,12 +21,21 @@
     "routes.js"
   ],
   "type": "commonjs",
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "npm run lint && NODE_ENV=test brittle tests/unit/*.test.js tests/integration/*.test.js",
+    "test:unit": "NODE_ENV=test brittle tests/unit/*.test.js",
+    "test:integration": "NODE_ENV=test brittle tests/integration/*.test.js",
+    "test:coverage": "brittle --coverage tests/unit/*.test.js tests/integration/*.test.js"
+  },
   "dependencies": {
     "debug": "4.3.5",
     "fastify": "5.8.5",
     "mingo": "6.4.15"
   },
   "devDependencies": {
+    "brittle": "3.16.3",
     "standard": "17.1.2"
   }
 }

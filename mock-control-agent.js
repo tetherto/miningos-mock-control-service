@@ -25,7 +25,7 @@ class MockControlAgent {
   }
 
   async runMockDataEditServer (port) {
-    if (!port) return
+    if (port == null) return
     this.server = fastify()
     this.server.addHook('onRequest', (req, _, next) => {
       req.ctx = {
@@ -41,7 +41,7 @@ class MockControlAgent {
       }
     }
 
-    await this.server.listen(port)
+    await this.server.listen({ port, host: '0.0.0.0' })
   }
 
   generateId () {
