@@ -1,6 +1,6 @@
 {
   "name": "@tetherto/miningos-mock-control-service",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "MiningOS Mock Control Service",
   "author": "Tether",
   "license": "Apache-2.0",
@@ -14,7 +14,7 @@
     "url": "https://github.com/tetherto/miningos-mock-control-service/issues"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "files": [
     "mock-control-agent.js",
